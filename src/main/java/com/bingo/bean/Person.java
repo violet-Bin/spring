@@ -15,12 +15,12 @@ public class Person {
     @Value("#{20-2}")
     private String age;
     @Value("${id}")
-    private int id;
+    private String id;
 
     public Person() {
     }
 
-    public Person(String name, String age, int id) {
+    public Person(String name, String age, String id) {
         this.name = name;
         this.age = age;
         this.id = id;
@@ -47,11 +47,11 @@ public class Person {
         this.age = age;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

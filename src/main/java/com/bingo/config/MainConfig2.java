@@ -31,7 +31,7 @@ public class MainConfig2 {
      */
     @Bean
 //    @Scope("prototype")
-    @Lazy
+//    @Lazy
     public Person person() {
         return new Person("张三", "17");
     }
